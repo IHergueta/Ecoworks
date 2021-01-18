@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-green3: #a0a09d;
+    --color-green2: #a0a09d;
+    --color-green1: #f3d8c8;
+    --color-contras: #a0a09d;
+}
+#body{
+    font-family: 'Indie Flower';
+    font-size: 20px;
+    background: url(https://s1.1zoom.me/big0/501/Italy_Boats_Lake_Mountains_Lake_Braies_Legs_Boots_579428_1280x853.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+h1{
+    background: var(--color-green2);
+    color: white;
+    text-align: center;
+    margin: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+#contenedor{
+    width:70%;
+    background: var(--color-green1);
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.box{
+    margin: 5px;
+    border: 2px solid var(--color-green3);
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    color: black;
+}
+#registro{
+    display: flex;
+    flex-direction:column;
+
+}
+input{
+    border-radius: 3px; 
+}
+#submit{
+    text-align: center;
+    padding: 10px 20px; 
+    display: block;
+    margin: auto;
+    border-radius: 5px; 
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 20px;
+}
+#submit:hover{
+    background: var(--color-green2);
+    color: white;
+}
+#adicionales{
+  width:90%;
+  border-radius:4px;
+}
+
+@media screen and (min-width:758px){
+    #contenedor{
+        width:500px;
+    }
+}
+

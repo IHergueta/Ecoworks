@@ -1,0 +1,106 @@
+/* BG, RESET, CENTER
+-------------------*/
+body {
+  background: #E8E8E8;
+}
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translate(-50%, -50%);
+}
+
+
+/* COLORS
+-------------------*/
+.brick-color-01 .brick__caption,
+.brick-color-01 .brick__caption--hover {
+  background: rgba(217, 164, 47, .85);
+}
+.brick-color-02 .brick__caption,
+.brick-color-02 .brick__caption--hover {
+  background: rgba(37, 156, 183, .85);
+}
+.brick-color-03 .brick__caption,
+.brick-color-03 .brick__caption--hover {
+  background: rgba(162, 192, 47,.85);
+}
+.brick-color-04 .brick__caption,
+.brick-color-04 .brick__caption--hover {
+  background: rgba(88, 88, 90, .85);
+}
+
+/* BRICKS
+-------------------*/
+.bricks {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1060px;
+}
+.brick:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.brick {  
+  background-position: center;
+  background-size: cover;
+  background-image: url('http://placehold.it/600x600');
+  float: left;
+  width: 50%;
+}
+@media (min-width: 767px) {
+  .brick {
+    width: 25%;
+  }
+}
+.brick__link {
+  display: block;
+  position: relative;
+  height: 228px;  
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  font-family: helvetica;
+}
+.brick:hover .brick__caption {
+  opacity: 0;
+}
+.brick:hover .brick__caption--hover {
+  opacity: 1;
+}
+
+.brick__caption,
+.brick__caption--hover{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #333;
+  display: block;
+  transition: opacity .3s;
+}
+.brick__caption--hover {
+  opacity: 0;
+  height: 100%;
+  transition: opacity .3s;
+}
+.brick__title,
+.brick__copy {
+  padding: 15px;
+  margin: 0;
+}
+.brick__title {
+  width: 100%;
+  font-family: helvetica;
+  font-size: 16px;
+}
+.brick__copy {
+  padding-top: 0;
+  font-family: georgia;
+  font-size: 23px;
+  font-weight: lighter;
+}
